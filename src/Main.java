@@ -7,7 +7,8 @@ public class Main {
 
         taskManager.markTaskAsComplete(1);
 
-        taskManager.printCompletedTasks();
-        taskManager.printPendingTasks();
+        TaskPrinter taskPrinter = new TaskPrinter(taskManager);
+        taskPrinter.printCompletedTasks();
+        taskPrinter.printPendingTasks();
     }
 }
